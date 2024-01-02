@@ -5,6 +5,11 @@ Simples und schnell gestricktes R-Skript, das als CRON-Job alle zehn Minuten auf
 
 Stand: 22.12.2023
 
+Karte zum Embedden: 
+```
+<iframe title="Live-Hochwasserkarte für Hessen" aria-label="Karte" id="datawrapper-chart-qcSxx" src="https://datawrapper.dwcdn.net/qcSxx/1636/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="788" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script>
+```
+
 ## Was es tut
 
 Das Skript zapft die JSON-Dateien an, die die Webseite der HLNUG selbst nutzt - da es keine richtige API gibt. Es nutzt dabei [eine Datei index.json](https://www.hlnug.de/static/pegel/wiskiweb3/data/internet/layers/10/index.json), die die Wasserstände für alle 183 Messpunkte enthält, und [eine weitere Datei stations.json](https://www.hlnug.de/static/pegel/wiskiweb3/data/internet/stations/stations.json), die Details zu den Messstationen enthält, unter anderem auch die Flüsse, die sie messen. Außerdem werden nach dem Schema der HLNUG-Website URLs generiert, die auf die Einzelseite und eine Thumbnail-Grafik für die jeweilige Messstation verweisen.
