@@ -7,7 +7,7 @@ Stand: 22.12.2023
 
 ## Was es tut
 
-Das Skript zapft die JSON-Dateien an, die die Webseite der HLNUG selbst nutzt - da es keine richtige API gibt. Es nutzt dabei eine Datei, die die Wasserstände für alle 183 Messpunkte enthält, und eine weitere, die Details zu den Messstationen enthält, unter anderem auch die Flüsse, die sie messen. Außerdem werden nach dem Schema der HLNUG-Website URLs generiert, die auf die Einzelseite und eine Thumbnail-Grafik für die jeweilige Messstation verweisen.
+Das Skript zapft die JSON-Dateien an, die die Webseite der HLNUG selbst nutzt - da es keine richtige API gibt. Es nutzt dabei [eine Datei index.json](https://www.hlnug.de/static/pegel/wiskiweb3/data/internet/layers/10/index.json), die die Wasserstände für alle 183 Messpunkte enthält, und [eine weitere Datei stations.json](https://www.hlnug.de/static/pegel/wiskiweb3/data/internet/stations/stations.json), die Details zu den Messstationen enthält, unter anderem auch die Flüsse, die sie messen. Außerdem werden nach dem Schema der HLNUG-Website URLs generiert, die auf die Einzelseite und eine Thumbnail-Grafik für die jeweilige Messstation verweisen.
 
 Diese Werte werden ausgelesen und in eine Tabelle/ein Dataframe geschrieben, das an eine [Datawrapper-Symbol-Karte](https://academy.datawrapper.de/article/114-how-to-create-a-symbol-map-in-datawrapper) übertragen wird. Jedes Symbol enthält neben den Koordinaten zwei Informationen: den Wasserstand (Größe) und die Warnstufe (Farbe: grün, gelb, orange, purpur)
 
@@ -47,7 +47,7 @@ Warnstufe_num | int | Meldestufe numerisch (0-3) | 0
 timestamp | Date | Zeitstempel der letzten Messung (i.d.R. alle 15min) | 2023-12-29T13:45:00.000+01:00
 prog_yes | String | Existiert Prognose für diese Messstelle? "yes" oder "no" | yes
 png_url | String | URL einer Thumbnail-Grafik (200x100px) des HLNUG mit Historie und evtl. Prognose | https://www.hlnug.de/static/pegel/wiskiweb3/data/internet/stations/0/25800600/W/small_wasserstand_vhs.png
-page_url | String | URL der Einzelseite für diese Messstelle beim HLNUG | https://www.hlnug.de/static/pegel/wiskiweb3/webpublic/#/overview/Wasserstand/station/43044/Bad%20Hersfeld1/WVorhersage?period=P7D
+page_url | String | URL der Einzelseite für diese Messstelle beim HLNUG | https://www.hlnug.de/static/pegel/wiskiweb3/webpublic/#/overview/Wasserstand/station/42482/AßlarWVorhersage
 
 ## Funktionen
 
