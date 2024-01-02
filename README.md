@@ -18,7 +18,7 @@ Weitere Informationen - welcher Fluss, werden in den Tooltipps der Karte angezei
 Technisch einfach umzusetzen, aber in der Eile noch nicht geschrieben: 
 - Informationen über die festgesetzten Warnstufen an der jeweiligen Messstation (geschrieben, aber noch nicht zu Ende korrigiert; einige Messstationen melden unvollständige Daten)
 - Historie und (wo vorhanden) Prognose der jeweiligen Messsstation aus der "week.json"-Datei für jede Station (Beispiel: https://www.hlnug.de/static/pegel/wiskiweb3/data/internet/stations/0/42710050/W/week.json). Ein Teil der Stationen berechnet in diesem Datensatz eine Prognose für die nächsten 6 Stunden - für eine Warnkarte ist das der möglicherweise wichtigste Datenpunkt. 
-- Die "Abschätzung" für die nächsten 7 Tage ist eine Trendberechnung, die 
+- Die "Abschätzung" für die nächsten 7 Tage ist eine Trendberechnung, die ermöglicht zu sagen, wann der schlimmste Tag am jeweiligen Ort zu erwarten ist.
 
 (Noch nicht umgesetztes Konzept: die deutlich schwieriger zu bestückende [Locator-Karte](https://academy.datawrapper.de/article/161-how-to-create-a-locator-map); Symbole verdeutlichen Trend und zu erwartende Gefahren: Pfeil hoch/gleich/runter mit Tendenz, Farbe verdeutlicht Warnstufe in 6h. Dazu als Text: Wann wird der Höchstwert erwartet)
 

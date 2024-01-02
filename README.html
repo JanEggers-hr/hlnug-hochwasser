@@ -363,12 +363,14 @@ sie eine Tabelle der 183 bekannten Messstationen übergibt.</p>
 <div id="was-es-tut" class="section level2">
 <h2>Was es tut</h2>
 <p>Das Skript zapft die JSON-Dateien an, die die Webseite der HLNUG
-selbst nutzt - da es keine richtige API gibt. Es nutzt dabei eine Datei,
-die die Wasserstände für alle 183 Messpunkte enthält, und eine weitere,
-die Details zu den Messstationen enthält, unter anderem auch die Flüsse,
-die sie messen. Außerdem werden nach dem Schema der HLNUG-Website URLs
-generiert, die auf die Einzelseite und eine Thumbnail-Grafik für die
-jeweilige Messstation verweisen.</p>
+selbst nutzt - da es keine richtige API gibt. Es nutzt dabei <a href="https://www.hlnug.de/static/pegel/wiskiweb3/data/internet/layers/10/index.json">eine
+Datei index.json</a>, die die Wasserstände für alle 183 Messpunkte
+enthält, und <a href="https://www.hlnug.de/static/pegel/wiskiweb3/data/internet/stations/stations.json">eine
+weitere Datei stations.json</a>, die Details zu den Messstationen
+enthält, unter anderem auch die Flüsse, die sie messen. Außerdem werden
+nach dem Schema der HLNUG-Website URLs generiert, die auf die
+Einzelseite und eine Thumbnail-Grafik für die jeweilige Messstation
+verweisen.</p>
 <p>Diese Werte werden ausgelesen und in eine Tabelle/ein Dataframe
 geschrieben, das an eine <a href="https://academy.datawrapper.de/article/114-how-to-create-a-symbol-map-in-datawrapper">Datawrapper-Symbol-Karte</a>
 übertragen wird. Jedes Symbol enthält neben den Koordinaten zwei
@@ -389,7 +391,8 @@ vorhanden) Prognose der jeweiligen Messsstation aus der
 Ein Teil der Stationen berechnet in diesem Datensatz eine Prognose für
 die nächsten 6 Stunden - für eine Warnkarte ist das der möglicherweise
 wichtigste Datenpunkt. - Die “Abschätzung” für die nächsten 7 Tage ist
-eine Trendberechnung, die</p>
+eine Trendberechnung, die ermöglicht zu sagen, wann der schlimmste Tag
+am jeweiligen Ort zu erwarten ist.</p>
 <p>(Noch nicht umgesetztes Konzept: die deutlich schwieriger zu
 bestückende <a href="https://academy.datawrapper.de/article/161-how-to-create-a-locator-map">Locator-Karte</a>;
 Symbole verdeutlichen Trend und zu erwartende Gefahren: Pfeil
@@ -508,7 +511,7 @@ evtl. Prognose</td>
 <td>page_url</td>
 <td>String</td>
 <td>URL der Einzelseite für diese Messstelle beim HLNUG</td>
-<td><a href="https://www.hlnug.de/static/pegel/wiskiweb3/webpublic/#/overview/Wasserstand/station/43044/Bad%20Hersfeld1/WVorhersage?period=P7D" class="uri">https://www.hlnug.de/static/pegel/wiskiweb3/webpublic/#/overview/Wasserstand/station/43044/Bad%20Hersfeld1/WVorhersage?period=P7D</a></td>
+<td><a href="https://www.hlnug.de/static/pegel/wiskiweb3/webpublic/#/overview/Wasserstand/station/42482/AßlarWVorhersage" class="uri">https://www.hlnug.de/static/pegel/wiskiweb3/webpublic/#/overview/Wasserstand/station/42482/AßlarWVorhersage</a></td>
 </tr>
 </tbody>
 </table>
